@@ -319,3 +319,4 @@ C:\Users\Rodrigo\Documents\Backend\Exemplo1_MVC\Exemplo1_MVC\obj\Debug\net9.0\re
 C:\Users\Rodrigo\Documents\Backend\Exemplo1_MVC\Exemplo1_MVC\obj\Debug\net9.0\Exemplo1_MVC.pdb
 C:\Users\Rodrigo\Documents\Backend\Exemplo1_MVC\Exemplo1_MVC\obj\Debug\net9.0\Exemplo1_MVC.genruntimeconfig.cache
 C:\Users\Rodrigo\Documents\Backend\Exemplo1_MVC\Exemplo1_MVC\obj\Debug\net9.0\ref\Exemplo1_MVC.dll
+C:\Users\Rodrigo\Documents\Backend\Exemplo1_MVC\Exemplo1_MVC\obj\Debug\net9.0\Exemplo1_MVC.sourcelink.json

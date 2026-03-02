@@ -23,5 +23,27 @@ namespace Exemplo1_MVC.Controllers {
         public IActionResult Index() {
             return View(categorias.OrderBy(cat => cat.CategoriaId));
         }
+        
+        public IActionResult Create() {
+            return View();
+        }
+
+        [HttpPost]
+        
+        public IActionResult Create(Categoria categoria) {
+
+            categorias.Add(categoria); //adc a nova categoria a lista
+            //busca o ult Id e incrementa 1 para a nova categoria
+            categoria.CategoriaId = categorias.Select(cat => cat.CategoriaId).Max() + 1;
+            return RedirectToAction("Index");
+
+        }
+
+        public IActionResult Details(int id) { 
+
+            //retorna uma view com os dados da caterogia cujo id
+            //foi passado como parametro
+        return View(categorias.Where(cat => cat.CategoriaId == id).First());
+        }
     }
 }
