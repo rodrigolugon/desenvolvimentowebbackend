@@ -45,5 +45,33 @@ namespace Exemplo1_MVC.Controllers {
             //foi passado como parametro
         return View(categorias.Where(cat => cat.CategoriaId == id).First());
         }
+
+        public IActionResult Edit(int id) {
+            return View(categorias.Where(cat => cat.CategoriaId == id).First());
+        }
+
+            [HttpPost]
+
+            public IActionResult Edit(Categoria categoria) {
+                
+            //remove
+            categorias.Remove(categorias.Where(cat => cat.CategoriaId == categoria.CategoriaId).First());
+            //add
+            categorias.Add(categoria);
+            //redireciona
+                return RedirectToAction("Index");
+            }
+        //Delete
+        public IActionResult Delete(int id) {
+            return View(categorias.Where(cat => cat.CategoriaId == id).First());
+        }
+
+        [HttpPost]
+
+        public IActionResult Delete(Categoria categoria) {
+
+            categorias.Remove(categorias.Where(cat => cat.CategoriaId == categoria.CategoriaId).First());
+            return RedirectToAction("Index");
+        }
     }
 }

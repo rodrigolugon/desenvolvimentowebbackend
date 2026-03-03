@@ -3,32 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|c:\\users\\rodrigo\\documents\\backend\\exemplo1_mvc\\exemplo1_mvc\\views\\categoria\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|solutionrelative:exemplo1_mvc\\views\\categoria\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|c:\\users\\rodrigo\\documents\\backend\\exemplo1_mvc\\exemplo1_mvc\\views\\produto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|solutionrelative:exemplo1_mvc\\views\\produto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|c:\\users\\rodrigo\\documents\\backend\\exemplo1_mvc\\exemplo1_mvc\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|solutionrelative:exemplo1_mvc\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|c:\\users\\rodrigo\\documents\\backend\\exemplo1_mvc\\exemplo1_mvc\\views\\categoria\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|solutionrelative:exemplo1_mvc\\views\\categoria\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|c:\\users\\rodrigo\\documents\\backend\\exemplo1_mvc\\exemplo1_mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|solutionrelative:exemplo1_mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|c:\\users\\rodrigo\\documents\\backend\\exemplo1_mvc\\exemplo1_mvc\\views\\categoria\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|solutionrelative:exemplo1_mvc\\views\\categoria\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|c:\\users\\rodrigo\\documents\\backend\\exemplo1_mvc\\exemplo1_mvc\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|solutionrelative:exemplo1_mvc\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|c:\\users\\rodrigo\\documents\\backend\\exemplo1_mvc\\exemplo1_mvc\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|solutionrelative:exemplo1_mvc\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|c:\\users\\rodrigo\\documents\\backend\\exemplo1_mvc\\exemplo1_mvc\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|solutionrelative:exemplo1_mvc\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|c:\\users\\rodrigo\\documents\\backend\\exemplo1_mvc\\exemplo1_mvc\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|solutionrelative:exemplo1_mvc\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,93 +54,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Views\\Categoria\\Details.cshtml",
-              "RelativeDocumentMoniker": "Exemplo1_MVC\\Views\\Categoria\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Views\\Categoria\\Details.cshtml",
-              "RelativeToolTip": "Exemplo1_MVC\\Views\\Categoria\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-02T23:37:01.186Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Program.cs",
-              "RelativeDocumentMoniker": "Exemplo1_MVC\\Program.cs",
-              "ToolTip": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Program.cs",
-              "RelativeToolTip": "Exemplo1_MVC\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T23:16:46.819Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Views\\Categoria\\Create.cshtml",
-              "RelativeDocumentMoniker": "Exemplo1_MVC\\Views\\Categoria\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Views\\Categoria\\Create.cshtml",
-              "RelativeToolTip": "Exemplo1_MVC\\Views\\Categoria\\Create.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-02T22:32:27.276Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Models\\Produto.cs",
-              "RelativeDocumentMoniker": "Exemplo1_MVC\\Models\\Produto.cs",
-              "ToolTip": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Models\\Produto.cs",
-              "RelativeToolTip": "Exemplo1_MVC\\Models\\Produto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T00:18:35.768Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Views\\Categoria\\Index.cshtml",
-              "RelativeDocumentMoniker": "Exemplo1_MVC\\Views\\Categoria\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Views\\Categoria\\Index.cshtml*",
-              "RelativeToolTip": "Exemplo1_MVC\\Views\\Categoria\\Index.cshtml*",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACMAAABUAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Views\\Produto\\Index.cshtml",
+              "RelativeDocumentMoniker": "Exemplo1_MVC\\Views\\Produto\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Views\\Produto\\Index.cshtml*",
+              "RelativeToolTip": "Exemplo1_MVC\\Views\\Produto\\Index.cshtml*",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAABgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-24T23:28:50.954Z",
+              "WhenOpened": "2026-03-03T23:11:54.129Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CategoriaController.cs",
-              "DocumentMoniker": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Controllers\\CategoriaController.cs",
-              "RelativeDocumentMoniker": "Exemplo1_MVC\\Controllers\\CategoriaController.cs",
-              "ToolTip": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Controllers\\CategoriaController.cs",
-              "RelativeToolTip": "Exemplo1_MVC\\Controllers\\CategoriaController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAqwC0AAAAIAAAAAAAAAA==",
+              "Title": "ProdutoController.cs",
+              "DocumentMoniker": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Controllers\\ProdutoController.cs",
+              "RelativeDocumentMoniker": "Exemplo1_MVC\\Controllers\\ProdutoController.cs",
+              "ToolTip": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Controllers\\ProdutoController.cs",
+              "RelativeToolTip": "Exemplo1_MVC\\Controllers\\ProdutoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-24T22:52:59.798Z",
+              "WhenOpened": "2026-03-03T22:41:28.768Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Models\\Produto.cs",
+              "RelativeDocumentMoniker": "Exemplo1_MVC\\Models\\Produto.cs",
+              "ToolTip": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Models\\Produto.cs",
+              "RelativeToolTip": "Exemplo1_MVC\\Models\\Produto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T22:38:50.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Categoria.cs",
               "DocumentMoniker": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Models\\Categoria.cs",
               "RelativeDocumentMoniker": "Exemplo1_MVC\\Models\\Categoria.cs",
               "ToolTip": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Models\\Categoria.cs",
               "RelativeToolTip": "Exemplo1_MVC\\Models\\Categoria.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-24T22:41:48.129Z"
+              "WhenOpened": "2026-03-03T22:36:38.393Z",
+              "EditorCaption": ""
             }
           ]
         }
