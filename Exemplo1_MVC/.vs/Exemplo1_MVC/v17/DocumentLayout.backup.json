@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|c:\\users\\rodrigo\\documents\\backend\\exemplo1_mvc\\exemplo1_mvc\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|solutionrelative:exemplo1_mvc\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|c:\\users\\rodrigo\\documents\\backend\\exemplo1_mvc\\exemplo1_mvc\\views\\produto\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|solutionrelative:exemplo1_mvc\\views\\produto\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,14 +43,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProdutoController.cs",
-              "DocumentMoniker": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Controllers\\ProdutoController.cs",
-              "RelativeDocumentMoniker": "Exemplo1_MVC\\Controllers\\ProdutoController.cs",
-              "ToolTip": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Controllers\\ProdutoController.cs",
-              "RelativeToolTip": "Exemplo1_MVC\\Controllers\\ProdutoController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwB4AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-04T22:26:25.741Z",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Views\\Produto\\Create.cshtml",
+              "RelativeDocumentMoniker": "Exemplo1_MVC\\Views\\Produto\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Views\\Produto\\Create.cshtml",
+              "RelativeToolTip": "Exemplo1_MVC\\Views\\Produto\\Create.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-04T23:55:31.779Z",
               "EditorCaption": ""
             }
           ]

@@ -41,6 +41,7 @@ namespace Exemplo1_MVC.Controllers {
         [HttpPost]
         public IActionResult Create(Produto produto) {
 
+
             produto.ProdutoId = DataStore.produtos.Select(prod => prod.ProdutoId).Max() + 1;
 
             DataStore.produtos.Add(produto);

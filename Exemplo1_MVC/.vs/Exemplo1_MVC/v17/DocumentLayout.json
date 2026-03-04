@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|c:\\users\\rodrigo\\documents\\backend\\exemplo1_mvc\\exemplo1_mvc\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|solutionrelative:exemplo1_mvc\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,19 +34,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProdutoController.cs",
-              "DocumentMoniker": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Controllers\\ProdutoController.cs",
-              "RelativeDocumentMoniker": "Exemplo1_MVC\\Controllers\\ProdutoController.cs",
-              "ToolTip": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Controllers\\ProdutoController.cs",
-              "RelativeToolTip": "Exemplo1_MVC\\Controllers\\ProdutoController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwB4AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-04T22:26:25.741Z",
-              "EditorCaption": ""
             }
           ]
         }
