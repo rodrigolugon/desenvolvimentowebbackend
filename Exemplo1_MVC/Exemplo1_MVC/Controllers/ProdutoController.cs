@@ -1,5 +1,6 @@
 ﻿using Exemplo1_MVC.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 
 namespace Exemplo1_MVC.Controllers {
@@ -34,19 +35,19 @@ namespace Exemplo1_MVC.Controllers {
 
         //Abre o formulário de criação
         public IActionResult Create() {
-            return View();
+            ViewBag.Categorias = new SelectList(DataStore.categorias, "CategoriaId", "Nome");
+            return View(); //busca o produto
         }
 
         //Cria um novo produto
         [HttpPost]
         public IActionResult Create(Produto produto) {
-
-
             produto.ProdutoId = DataStore.produtos.Select(prod => prod.ProdutoId).Max() + 1;
-
+            produto.categoria = DataStore.categorias.First(cat => cat.CategoriaId == produto.CategoriaId);
             DataStore.produtos.Add(produto);
-
             return RedirectToAction("Index");
+
+
         }
 
         //Abre o formulário de edição
