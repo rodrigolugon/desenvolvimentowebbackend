@@ -3,7 +3,7 @@
         public int ProdutoId { get; set; }
         public string Nome { get; set; }
         public float Preco { get; set; }
-        public int CategoriaId { get; set; }
-        public Categoria categoria { get; set; }
+        public int CategoriaId { get; set; } //chave estrangeira
+        public Categoria categoria { get; set; } //relacao
     }
 }

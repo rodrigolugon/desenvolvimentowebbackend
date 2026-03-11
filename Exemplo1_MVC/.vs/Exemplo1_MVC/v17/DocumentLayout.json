@@ -21,6 +21,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|c:\\users\\rodrigo\\documents\\backend\\exemplo1_mvc\\exemplo1_mvc\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|solutionrelative:exemplo1_mvc\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|c:\\users\\rodrigo\\documents\\backend\\exemplo1_mvc\\exemplo1_mvc\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C45E618A-D4FD-4BDD-9A28-8FA79A9F8168}|Exemplo1_MVC\\Exemplo1_MVC.csproj|solutionrelative:exemplo1_mvc\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -64,35 +68,9 @@
               "RelativeDocumentMoniker": "Exemplo1_MVC\\Views\\Produto\\Create.cshtml",
               "ToolTip": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Views\\Produto\\Create.cshtml",
               "RelativeToolTip": "Exemplo1_MVC\\Views\\Produto\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAB4AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-09T22:46:06.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Models\\Produto.cs",
-              "RelativeDocumentMoniker": "Exemplo1_MVC\\Models\\Produto.cs",
-              "ToolTip": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Models\\Produto.cs",
-              "RelativeToolTip": "Exemplo1_MVC\\Models\\Produto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T22:35:27.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Categoria.cs",
-              "DocumentMoniker": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Models\\Categoria.cs",
-              "RelativeDocumentMoniker": "Exemplo1_MVC\\Models\\Categoria.cs",
-              "ToolTip": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Models\\Categoria.cs",
-              "RelativeToolTip": "Exemplo1_MVC\\Models\\Categoria.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T22:35:14.078Z",
+              "WhenOpened": "2026-03-09T23:33:47.495Z",
               "EditorCaption": ""
             },
             {
@@ -103,10 +81,34 @@
               "RelativeDocumentMoniker": "Exemplo1_MVC\\Models\\DataStore.cs",
               "ToolTip": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Models\\DataStore.cs",
               "RelativeToolTip": "Exemplo1_MVC\\Models\\DataStore.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T22:17:51.743Z",
+              "WhenOpened": "2026-03-09T23:33:34.708Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Models\\Categoria.cs",
+              "RelativeDocumentMoniker": "Exemplo1_MVC\\Models\\Categoria.cs",
+              "ToolTip": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Models\\Categoria.cs",
+              "RelativeToolTip": "Exemplo1_MVC\\Models\\Categoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T23:33:32.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoriaController.cs",
+              "DocumentMoniker": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Controllers\\CategoriaController.cs",
+              "RelativeDocumentMoniker": "Exemplo1_MVC\\Controllers\\CategoriaController.cs",
+              "ToolTip": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Controllers\\CategoriaController.cs",
+              "RelativeToolTip": "Exemplo1_MVC\\Controllers\\CategoriaController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T23:33:09.969Z"
             },
             {
               "$type": "Document",
@@ -116,9 +118,22 @@
               "RelativeDocumentMoniker": "Exemplo1_MVC\\Controllers\\ProdutoController.cs",
               "ToolTip": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Controllers\\ProdutoController.cs",
               "RelativeToolTip": "Exemplo1_MVC\\Controllers\\ProdutoController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAA2wCYAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T22:17:14.157Z",
+              "WhenOpened": "2026-03-09T23:32:45.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Models\\Produto.cs",
+              "RelativeDocumentMoniker": "Exemplo1_MVC\\Models\\Produto.cs",
+              "ToolTip": "C:\\Users\\Rodrigo\\Documents\\Backend\\Exemplo1_MVC\\Exemplo1_MVC\\Models\\Produto.cs",
+              "RelativeToolTip": "Exemplo1_MVC\\Models\\Produto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T23:28:40.008Z",
               "EditorCaption": ""
             }
           ]

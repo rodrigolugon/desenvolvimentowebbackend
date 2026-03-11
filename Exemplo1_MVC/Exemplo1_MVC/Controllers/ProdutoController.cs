@@ -36,18 +36,16 @@ namespace Exemplo1_MVC.Controllers {
         //Abre o formulário de criação
         public IActionResult Create() {
             ViewBag.Categorias = new SelectList(DataStore.categorias, "CategoriaId", "Nome");
-            return View(); //busca o produto
+            return View(); //busca lista de categoria para add no prodt
         }
 
         //Cria um novo produto
         [HttpPost]
-        public IActionResult Create(Produto produto) {
+        public IActionResult Create(Produto produto) { //atualizado p adicionar list de categoria no produto
             produto.ProdutoId = DataStore.produtos.Select(prod => prod.ProdutoId).Max() + 1;
             produto.categoria = DataStore.categorias.First(cat => cat.CategoriaId == produto.CategoriaId);
             DataStore.produtos.Add(produto);
             return RedirectToAction("Index");
-
-
         }
 
         //Abre o formulário de edição
