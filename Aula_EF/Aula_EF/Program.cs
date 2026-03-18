@@ -14,7 +14,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<Context>(options =>
     options.UseSqlServer(builder.Configuration["Data:Exemplo_EF_BD26:ConnectionString"],
 
-    //evita que o BD n?o seja criado por problemas de timeout com o servidor
+    //evita que o BD nao seja criado por problemas de timeout com o servidor
     sqlServerOptionsAction: sqlOptions => {
         sqlOptions.EnableRetryOnFailure(
             maxRetryCount: 10,
@@ -37,7 +37,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Produto}/{action=Index}/{id?}");
 
 //SeedData.Initialize(app.Services);
 SeedData.EnsurePopulated(app);
