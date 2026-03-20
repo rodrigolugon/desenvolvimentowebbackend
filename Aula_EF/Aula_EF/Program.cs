@@ -37,7 +37,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Produto}/{action=Index}/{id?}");
+    pattern: "{controller=Fabricante}/{action=Index}/{id?}");
 
 //SeedData.Initialize(app.Services);
 SeedData.EnsurePopulated(app);
