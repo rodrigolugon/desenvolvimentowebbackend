@@ -1,0 +1,116 @@
+﻿@model Academia.Models.Treino
+
+<h2>Novo Treino</h2>
+
+<form asp-action="Create">
+    <div class="mb-3">
+        <label asp-for="PersonalID" class="form-label">Personal</label>
+        <select asp-for="PersonalID" class="form-control">
+            <option value="">-- Selecione --</option>
+            @foreach (var p in ViewBag.Personals) {
+                <option value="@p.PersonalID">@p.Nome</option>
+            }
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AlunoID" class="form-label">Aluno</label>
+        <select asp-for="AlunoID" class="form-control">
+            <option value="">-- Selecione --</option>
+            @foreach (var a in ViewBag.Alunos) {
+                <option value="@a.AlunoID">@a.Nome</option>
+            }
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Data" class="form-label"></label>
+        <input asp-for="Data" class="form-control" type="date" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Hora" class="form-label"></label>
+        <input asp-for="Hora" class="form-control" type="time" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Exercícios <small class="text-muted">(selecione pelo menos 4)</small></label>
+
+        <div class="dropdown">
+            <button class="btn btn-outline-secondary dropdown-toggle w-100 text-start" type="button"
+                    id="dropdownExercicios" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                <span id="textoDropdown">Selecione os exercícios...</span>
+            </button>
+            <ul class="dropdown-menu w-100 p-2" style="max-height: 300px; overflow-y: auto;">
+                @foreach (var e in ViewBag.Exercicios) {
+                    <li>
+                        <div class="form-check px-3 py-1">
+                            <input class="form-check-input exercicio-check"
+                                   type="checkbox"
+                                   name="exerciciosSelecionados"
+                                   value="@e.ExercicioID"
+                                   id="ex_@e.ExercicioID" />
+                            <label class="form-check-label w-100" for="ex_@e.ExercicioID">
+                                <strong>@e.Nome</strong>
+                                <small class="text-muted">— @e.Categoria</small>
+                            </label>
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+
+        <small id="avisoExercicios" class="text-danger d-none">Selecione pelo menos 4 exercícios.</small>
+        <div class="mt-1">
+            <span class="badge bg-secondary" id="contadorSelecionados">0 selecionados</span>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" id="btnSalvar">Salvar</button>
+    <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+</form>
+
+@section Scripts {
+    <script>
+        const checks = document.querySelectorAll('.exercicio-check');
+        const contador = document.getElementById('contadorSelecionados');
+        const aviso = document.getElementById('avisoExercicios');
+        const textoDropdown = document.getElementById('textoDropdown');
+
+        checks.forEach(function (cb) {
+            cb.addEventListener('change', function () {
+                const selecionados = document.querySelectorAll('.exercicio-check:checked');
+                const qtd = selecionados.length;
+
+                // Bloqueia se tentar marcar mais de 4
+                if (qtd > 4) {
+                    this.checked = false;
+                    return;
+                }
+
+                contador.textContent = qtd + ' de 4 selecionados';
+                contador.className = qtd === 4 ? 'badge bg-success' : 'badge bg-secondary';
+
+                if (qtd === 4) aviso.classList.add('d-none');
+
+                if (qtd === 0) {
+                    textoDropdown.textContent = 'Selecione os exercícios...';
+                } else {
+                    const nomes = Array.from(selecionados).map(c =>
+                        document.querySelector('label[for="' + c.id + '"] strong').textContent
+                    );
+                    textoDropdown.textContent = nomes.join(', ');
+                }
+            });
+        });
+
+        document.getElementById('btnSalvar').addEventListener('click', function (e) {
+            const qtd = document.querySelectorAll('.exercicio-check:checked').length;
+            if (qtd !== 4) {
+                e.preventDefault();
+                aviso.classList.remove('d-none');
+                document.getElementById('avisoExercicios').textContent = 'Selecione exatamente 4 exercícios.';
+            }
+        });
+    </script>
+}
