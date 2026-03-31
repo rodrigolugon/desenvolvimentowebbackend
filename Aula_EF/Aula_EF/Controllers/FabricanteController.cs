@@ -10,17 +10,17 @@ namespace ExemploEF.Controllers {
             context = ctx;
         }
 
-        // INDEX — lista todos os fabricantes
+        //metodo que mostra todos os fabricantes cadastrados no BD
         public IActionResult Index() {
             return View(context.Fabricantes);
         }
 
-        // CREATE GET — exibe o formulário
+        //metodo que abre a página com o form para cadastrar um fabricante
         public IActionResult Create() {
             return View();
         }
 
-        // CREATE POST — salva no banco
+        //metodo que recebe os dados do form e salva no BD
         [HttpPost]
         public IActionResult Create(Fabricante fabricante) {
             context.Add(fabricante);
@@ -28,20 +28,21 @@ namespace ExemploEF.Controllers {
             return RedirectToAction("Index");
         }
 
-        // DETAILS — exibe um fabricante pelo id
+        //metodo que mostra os detalhes de um fabricante específico
         public IActionResult Details(int id) {
             var fabricante = context.Fabricantes
+                .Include(f => f.Produtos)
                 .FirstOrDefault(f => f.FabricanteId == id);
             return View(fabricante);
         }
 
-        // EDIT GET — carrega o fabricante para edição
+        //metodo que carrega os dados do fabricante p/ aparecer no form de edicao.
         public IActionResult Edit(int id) {
             var fabricante = context.Fabricantes.Find(id);
             return View(fabricante);
         }
 
-        // EDIT POST — salva as alterações
+        //metodo que salva no BD as alterações feitas no form de edicao
         [HttpPost]
         public IActionResult Edit(Fabricante fabricante) {
             context.Entry(fabricante).State = EntityState.Modified;
@@ -49,14 +50,14 @@ namespace ExemploEF.Controllers {
             return RedirectToAction("Index");
         }
 
-        // DELETE GET — exibe confirmação
+        //exibe confirmação do delete
         public IActionResult Delete(int id) {
             var fabricante = context.Fabricantes
                 .FirstOrDefault(f => f.FabricanteId == id);
             return View(fabricante);
         }
 
-        // DELETE POST — remove do banco
+        //remove do banco
         [HttpPost]
         public IActionResult Delete(Fabricante fabricante) {
             context.Fabricantes.Remove(fabricante);

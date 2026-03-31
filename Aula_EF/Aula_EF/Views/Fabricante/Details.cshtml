@@ -10,14 +10,32 @@
     <h4>Fabricante</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Nome)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Nome)
         </dd>
     </dl>
 </div>
+
+@* -- ADICIONADO AQUI (sem alterar sua estrutura) -- *@
+<div>
+    <h4>Produtos</h4>
+    <hr />
+
+    @if (Model.Produtos != null && Model.Produtos.Count > 0) {
+        <ul>
+            @foreach (var item in Model.Produtos) {
+                <li>@item.Nome</li>
+            }
+        </ul>
+    }
+    else {
+        <p>Nenhum produto cadastrado.</p>
+    }
+</div>
+
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.FabricanteId">Edit</a> |
     <a asp-action="Index">Back to List</a>
