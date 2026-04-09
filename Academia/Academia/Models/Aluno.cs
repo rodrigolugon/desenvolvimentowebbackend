@@ -14,7 +14,7 @@ namespace Academia.Models {
         public string? Observacoes { get; set; }
 
         // Chave estrangeira
-        public int PersonalID { get; set; }
+        public int? PersonalID { get; set; }
 
         // Propriedades de navegação (PRECISAM DO ? PARA NÃO TRAVAR O CREATE)
         public virtual Personal? Personal { get; set; }

@@ -1,42 +1,44 @@
 ﻿@model Academia.Models.Treino
-
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalhes do Treino";
 }
 
-<h1>Details</h1>
+<h1>Detalhes do Treino</h1>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <dl class="row">
+            <dt class="col-sm-4">Personal</dt>
+            <dd class="col-sm-8">@Model.Personal?.Nome</dd>
+
+            <dt class="col-sm-4">Aluno</dt>
+            <dd class="col-sm-8">@Model.Aluno?.Nome</dd>
+
+            <dt class="col-sm-4">Data</dt>
+            <dd class="col-sm-8">@Model.Data.ToString("dd/MM/yyyy")</dd>
+
+            <dt class="col-sm-4">Hora</dt>
+            <dd class="col-sm-8">@Model.Hora</dd>
+
+            <dt class="col-sm-4">Exercícios</dt>
+            <dd class="col-sm-8">
+                @if (Model.TreinoExercicios != null && Model.TreinoExercicios.Any()) {
+                    <ul>
+                        @foreach (var te in Model.TreinoExercicios) {
+                            <li>@te.Exercicio?.Nome</li>
+                        }
+                    </ul>
+                }
+                else {
+                    <span>Nenhum exercício cadastrado.</span>
+                }
+            </dd>
+        </dl>
+    </div>
+</div>
 
 <div>
-    <h4>Treino</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Data)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Data)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Hora)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Hora)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Personal)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Personal.PersonalID)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Aluno)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Aluno.AlunoID)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.TreinoID">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model.TreinoID" class="btn btn-warning">Editar</a>
+    <a asp-action="Index" class="btn btn-secondary">Voltar</a>
 </div>

@@ -1,0 +1,34 @@
+﻿@model List<Academia.Models.Treino>
+@{
+    ViewData["Title"] = "Meu Treino";
+}
+
+<h1>Meu Treino</h1>
+<hr />
+
+@if (!Model.Any()) {
+    <p>Nenhum treino cadastrado ainda.</p>
+}
+else {
+    @foreach (var treino in Model) {
+        <div class="card mb-3">
+            <div class="card-header">
+                <strong>Hora:</strong> @treino.Hora —
+                <strong>Personal:</strong> @treino.Personal?.Nome
+            </div>
+            <div class="card-body">
+                <h6>Exercícios:</h6>
+                @if (treino.TreinoExercicios != null && treino.TreinoExercicios.Any()) {
+                    <ul>
+                        @foreach (var te in treino.TreinoExercicios) {
+                            <li>@te.Exercicio?.Nome</li>
+                        }
+                    </ul>
+                }
+                else {
+                    <p class="text-muted">Nenhum exercício cadastrado.</p>
+                }
+            </div>
+        </div>
+    }
+}

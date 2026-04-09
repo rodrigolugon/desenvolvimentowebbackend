@@ -1,0 +1,33 @@
+﻿@model List<Academia.Models.Aluno>
+@{
+    ViewData["Title"] = "Meus Alunos";
+}
+
+<h1>Meus Alunos</h1>
+<hr />
+
+@if (!Model.Any()) {
+    <p>Nenhum aluno cadastrado ainda.</p>
+}
+else {
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>E-Mail</th>
+                <th>Telefone</th>
+                <th>Instagram</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var aluno in Model) {
+                <tr>
+                    <td>@aluno.Nome</td>
+                    <td>@aluno.E_Mail</td>
+                    <td>@aluno.Telefone</td>
+                    <td>@aluno.Instagram</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

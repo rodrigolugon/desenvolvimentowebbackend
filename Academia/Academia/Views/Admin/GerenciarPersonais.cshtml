@@ -1,0 +1,35 @@
+﻿@model List<Academia.Models.Personal>
+@{
+    ViewData["Title"] = "Gerenciar Personais";
+}
+
+<h1>Gerenciar Personais</h1>
+<hr />
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Especialidade</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var personal in Model) {
+            <tr>
+                <td>@personal.Nome</td>
+                <td>@personal.Especialidade</td>
+                <td>
+                    <a asp-controller="Personal" asp-action="Edit" asp-route-id="@personal.PersonalID" class="btn btn-sm btn-warning">Editar</a>
+                    <form asp-action="DeletarPersonal" method="post" style="display:inline">
+                        <input type="hidden" name="id" value="@personal.PersonalID" />
+                        <button type="submit" class="btn btn-sm btn-danger"
+                                onclick="return confirm('Deletar @personal.Nome?')">
+                            Deletar
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

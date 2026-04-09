@@ -1,0 +1,19 @@
+﻿@model Academia.Models.Personal
+@{
+    ViewData["Title"] = "Meu Personal";
+}
+
+<h1>Meu Personal</h1>
+<hr />
+
+@if (Model == null) {
+    <p>Nenhum personal associado.</p>
+}
+else {
+    <dl class="row">
+        <dt class="col-sm-3">Nome</dt>
+        <dd class="col-sm-9">@Model.Nome</dd>
+        <dt class="col-sm-3">Especialidade</dt>
+        <dd class="col-sm-9">@Model.Especialidade</dd>
+    </dl>
+}

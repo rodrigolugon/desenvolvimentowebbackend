@@ -1,0 +1,53 @@
+﻿@page
+@model Academia.Areas.Identity.Pages.Account.RegisterAlunoModel
+@{
+    ViewData["Title"] = "Registro de Aluno";
+}
+
+<h2>Cadastro de Aluno</h2>
+
+<form method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="mb-3">
+        <label asp-for="Input.Nome" class="form-label">Nome</label>
+        <input asp-for="Input.Nome" class="form-control" />
+        <span asp-validation-for="Input.Nome" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Input.DataNascimento" class="form-label">Data de Nascimento</label>
+        <input asp-for="Input.DataNascimento" type="date" class="form-control" />
+        <span asp-validation-for="Input.DataNascimento" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Input.Instagram" class="form-label">Instagram</label>
+        <input asp-for="Input.Instagram" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Input.Telefone" class="form-label">Telefone</label>
+        <input asp-for="Input.Telefone" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Input.Email" class="form-label">E-mail</label>
+        <input asp-for="Input.Email" class="form-control" />
+        <span asp-validation-for="Input.Email" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Input.Password" class="form-label">Senha</label>
+        <input asp-for="Input.Password" type="password" class="form-control" />
+        <span asp-validation-for="Input.Password" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Input.ConfirmPassword" class="form-label">Confirmar Senha</label>
+        <input asp-for="Input.ConfirmPassword" type="password" class="form-control" />
+        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Cadastrar</button>
+</form>

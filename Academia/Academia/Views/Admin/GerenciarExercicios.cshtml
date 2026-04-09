@@ -1,0 +1,37 @@
+﻿@model List<Academia.Models.Exercicio>
+@{
+    ViewData["Title"] = "Gerenciar Exercícios";
+}
+
+<h1>Gerenciar Exercícios</h1>
+<hr />
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Categoria</th>
+            <th>Descrição</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var exercicio in Model) {
+            <tr>
+                <td>@exercicio.Nome</td>
+                <td>@exercicio.Categoria</td>
+                <td>@exercicio.Descricao</td>
+                <td>
+                    <a asp-controller="Exercicio" asp-action="Edit" asp-route-id="@exercicio.ExercicioID" class="btn btn-sm btn-warning">Editar</a>
+                    <form asp-action="DeletarExercicio" method="post" style="display:inline">
+                        <input type="hidden" name="id" value="@exercicio.ExercicioID" />
+                        <button type="submit" class="btn btn-sm btn-danger"
+                                onclick="return confirm('Deletar @exercicio.Nome?')">
+                            Deletar
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

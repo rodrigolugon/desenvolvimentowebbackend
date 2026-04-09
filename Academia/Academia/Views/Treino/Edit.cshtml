@@ -1,49 +1,96 @@
 ﻿@model Academia.Models.Treino
-
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar Treino";
 }
 
-<h1>Edit</h1>
-
-<h4>Treino</h4>
+<h1>Editar Treino</h1>
 <hr />
+
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="TreinoID" />
-            <div class="form-group">
-                <label asp-for="PersonalID" class="control-label"></label>
-                <select asp-for="PersonalID" class="form-control" asp-items="ViewBag.PersonalID"></select>
+
+            <div class="form-group mb-3">
+                <label asp-for="PersonalID" class="control-label">Personal</label>
+                <select asp-for="PersonalID" class="form-control" asp-items="ViewBag.Personals">
+                    <option value="">-- Selecione um Personal --</option>
+                </select>
                 <span asp-validation-for="PersonalID" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="AlunoID" class="control-label"></label>
-                <select asp-for="AlunoID" class="form-control" asp-items="ViewBag.AlunoID"></select>
+
+            <div class="form-group mb-3">
+                <label asp-for="AlunoID" class="control-label">Aluno</label>
+                <select asp-for="AlunoID" class="form-control" asp-items="ViewBag.Alunos">
+                    <option value="">-- Selecione um Aluno --</option>
+                </select>
                 <span asp-validation-for="AlunoID" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Data" class="control-label"></label>
-                <input asp-for="Data" class="form-control" />
+
+            <div class="form-group mb-3">
+                <label asp-for="Data" class="control-label">Data</label>
+                <input asp-for="Data" class="form-control" type="date" />
                 <span asp-validation-for="Data" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Hora" class="control-label"></label>
-                <input asp-for="Hora" class="form-control" />
+
+            <div class="form-group mb-3">
+                <label asp-for="Hora" class="control-label">Hora</label>
+                <input name="Hora" class="form-control" type="time" value="@Model.Hora" />
                 <span asp-validation-for="Hora" class="text-danger"></span>
             </div>
+
+            <div class="form-group mb-3">
+                <label class="control-label">Exercícios (selecione exatamente 4)</label>
+                <div id="contador" class="text-muted mb-2">Selecionados: 0/4</div>
+                @{
+                    var listaExercicios = ViewBag.Exercicios as List<Academia.Models.Exercicio>
+                    ?? new List<Academia.Models.Exercicio>();
+                }
+                @foreach (var exercicio in listaExercicios) {
+                    var selecionado = Model.TreinoExercicios != null &&
+                    Model.TreinoExercicios.Any(te => te.ExercicioID == exercicio.ExercicioID);
+                    <div class="form-check">
+                        <input class="form-check-input exercicio-check"
+                               type="checkbox"
+                               name="exerciciosSelecionados"
+                               value="@exercicio.ExercicioID"
+                               @(selecionado ? "checked" : "") />
+                        <label class="form-check-label">@exercicio.Nome</label>
+                    </div>
+                }
+            </div>
+
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        const checks = document.querySelectorAll('.exercicio-check');
+        const contador = document.getElementById('contador');
+
+        function atualizarContador() {
+            const selecionados = document.querySelectorAll('.exercicio-check:checked').length;
+            contador.textContent = `Selecionados: ${selecionados}/4`;
+            contador.className = selecionados === 4 ? 'text-success mb-2' : 'text-muted mb-2';
+        }
+
+        checks.forEach(check => {
+            check.addEventListener('change', function () {
+                const selecionados = document.querySelectorAll('.exercicio-check:checked').length;
+                if (selecionados > 4) this.checked = false;
+                atualizarContador();
+            });
+        });
+
+        atualizarContador();
+    </script>
 }

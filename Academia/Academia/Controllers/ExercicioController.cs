@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Academia.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Academia.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Academia.Controllers
 {
@@ -43,6 +44,7 @@ namespace Academia.Controllers
         }
 
         // GET: Exercicio/Create
+        [Authorize(Roles = "Personal")]
         public IActionResult Create()
         {
             return View();
@@ -53,6 +55,7 @@ namespace Academia.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Personal")]
         public async Task<IActionResult> Create([Bind("ExercicioID,Nome,Categoria,Descricao")] Exercicio exercicio)
         {
             if (ModelState.IsValid)
@@ -65,6 +68,7 @@ namespace Academia.Controllers
         }
 
         // GET: Exercicio/Edit/5
+        [Authorize(Roles = "Personal")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -85,6 +89,7 @@ namespace Academia.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Personal")]
         public async Task<IActionResult> Edit(int id, [Bind("ExercicioID,Nome,Categoria,Descricao")] Exercicio exercicio)
         {
             if (id != exercicio.ExercicioID)
@@ -116,6 +121,7 @@ namespace Academia.Controllers
         }
 
         // GET: Exercicio/Delete/5
+        [Authorize(Roles = "Personal")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -136,6 +142,7 @@ namespace Academia.Controllers
         // POST: Exercicio/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Personal")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var exercicio = await _context.Exercicios.FindAsync(id);

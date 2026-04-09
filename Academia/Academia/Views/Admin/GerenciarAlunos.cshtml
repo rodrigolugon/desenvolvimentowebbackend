@@ -1,0 +1,39 @@
+﻿@model List<Academia.Models.Aluno>
+@{
+    ViewData["Title"] = "Gerenciar Alunos";
+}
+
+<h1>Gerenciar Alunos</h1>
+<hr />
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>E-Mail</th>
+            <th>Telefone</th>
+            <th>Personal</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var aluno in Model) {
+            <tr>
+                <td>@aluno.Nome</td>
+                <td>@aluno.E_Mail</td>
+                <td>@aluno.Telefone</td>
+                <td>@aluno.Personal?.Nome</td>
+                <td>
+                    <a asp-controller="Aluno" asp-action="Edit" asp-route-id="@aluno.AlunoID" class="btn btn-sm btn-warning">Editar</a>
+                    <form asp-action="DeletarAluno" method="post" style="display:inline">
+                        <input type="hidden" name="id" value="@aluno.AlunoID" />
+                        <button type="submit" class="btn btn-sm btn-danger"
+                                onclick="return confirm('Deletar @aluno.Nome?')">
+                            Deletar
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
